@@ -1,4 +1,5 @@
-import Fundo from './fundo'
+import Interacoes from './interacoes'
+import PostLike from './fotoLike'
 export default function Post(props) {
   return (
     <div class="post" data-test="post">
@@ -12,10 +13,7 @@ export default function Post(props) {
         </div>
       </div>
 
-      <div class="conteudo">
-        <img src={props.imgPost} alt={props.nomePost} />
-      </div>
-      <Fundo tudo={props} />
+      <Interacoes tudo={props} />
     </div>
   )
 }
