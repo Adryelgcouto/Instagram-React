@@ -1,4 +1,5 @@
 export default function Story(props) {
+  console.log(props)
   return (
     <div class="story">
       <div class="imagem">
