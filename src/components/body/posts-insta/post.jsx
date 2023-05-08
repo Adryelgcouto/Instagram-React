@@ -1,3 +1,4 @@
+import Acoes from "./acoes"
 export default function Post(props) {
   console.log(props)
   return (
@@ -15,18 +16,9 @@ export default function Post(props) {
       <div class="conteudo">
         <img src={props.imgPost} alt={props.nomePost} />
       </div>
-
+      
       <div class="fundo">
-        <div class="acoes">
-          <div>
-            <ion-icon data-test="like-post"   name="heart-outline"></ion-icon>
-            <ion-icon name="chatbubble-outline"></ion-icon>
-            <ion-icon name="paper-plane-outline"></ion-icon>
-          </div>
-          <div>
-            <ion-icon data-test="save-post" name="bookmark-outline"></ion-icon>
-          </div>
-        </div>
+      <Acoes/>
 
         <div class="curtidas">
           <img src={props.imgCurtida} alt={props.nomeCurtida} />
