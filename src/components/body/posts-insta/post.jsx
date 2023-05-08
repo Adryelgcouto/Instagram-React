@@ -1,10 +1,10 @@
 export default function Post(props) {
   console.log(props)
   return (
-    <div class="post">
+    <div class="post" data-test="post">
       <div class="topo">
         <div class="usuario">
-          <img src={props.imgUsuario} alt={props.nome} />
+          <img data-test="post-image"   src={props.imgUsuario} alt={props.nome} />
           {props.nome}
         </div>
         <div class="acoes">
@@ -19,12 +19,12 @@ export default function Post(props) {
       <div class="fundo">
         <div class="acoes">
           <div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon data-test="like-post"   name="heart-outline"></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
           <div>
-            <ion-icon name="bookmark-outline"></ion-icon>
+            <ion-icon data-test="save-post" name="bookmark-outline"></ion-icon>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ export default function Post(props) {
           <img src={props.imgCurtida} alt={props.nomeCurtida} />
           <div class="texto">
             Curtido por <strong>{props.nomeCurtida}</strong> e{' '}
-            <strong>outras {props.quantidadeCurtida} pessoas</strong>
+            <strong data-test="likes-number">outras {props.quantidadeCurtida} pessoas</strong>
           </div>
         </div>
       </div>
