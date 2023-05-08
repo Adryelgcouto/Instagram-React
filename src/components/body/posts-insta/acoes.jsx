@@ -1,6 +1,5 @@
 import PostLike from "./fotoLike"
 export default function Acoes(props) {
- 
   return (
     <>
       <PostLike postTudo={props} dupleClick={props.dupleClick} />
