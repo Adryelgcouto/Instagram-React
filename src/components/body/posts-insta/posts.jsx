@@ -8,7 +8,7 @@ export default function Posts() {
       nomePost: 'gato-telefone',
       imgCurtida: 'assets/img/respondeai.svg',
       nomeCurtida: 'respondeai',
-      quantidadeCurtida:'101.523'
+      quantidadeCurtida:'101523'
     },
     {
       imgUsuario:'assets/img/filomoderna.svg',
@@ -17,7 +17,7 @@ export default function Posts() {
       nomePost: 'gato-telefone',
       imgCurtida: 'assets/img/wawawicomics.svg',
       nomeCurtida: 'wawawicomics',
-      quantidadeCurtida:'234.523'
+      quantidadeCurtida:'234523'
     },
     {
       imgUsuario:'assets/img/meowed.svg',
@@ -26,7 +26,7 @@ export default function Posts() {
       nomePost: 'gato-telefone',
       imgCurtida: 'assets/img/adorable_animals.svg',
       nomeCurtida: 'adorable_animals',
-      quantidadeCurtida:'99.159'
+      quantidadeCurtida:'99159'
     }
   ]
   return (
