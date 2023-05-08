@@ -14,7 +14,7 @@ export default function Acoes(props) {
         <ion-icon name="paper-plane-outline"></ion-icon>
       </div>
       <div>
-        <ion-icon data-test="save-post" name="bookmark-outline"></ion-icon>
+        <ion-icon onClick={props.bookMarkOn} data-test="save-post" name={props.bookMarkConst}></ion-icon>
       </div>
     </div>
     
