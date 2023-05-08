@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Acoes from './acoes'
+import CurtidasPost from './curtidasPost'
+
 export default function Fundo(props) {
   let [like, setLike] = useState('heart-outline')
   let [vermelho, setVermelho] = useState('')
@@ -19,16 +21,11 @@ export default function Fundo(props) {
       setCurtidas(Number(curtidas) - 1)
     }
   }
+  
   return (
     <div class="fundo">
       <Acoes click={HandLike} classColor={vermelho} like={like} />
-      <div class="curtidas">
-        <img src={props.tudo.imgCurtida} alt={props.tudo.nomeCurtida} />
-        <div class="texto">
-          Curtido por <strong>{props.tudo.nomeCurtida}</strong> e{' '}
-          <strong data-test="likes-number">outras {Number(curtidas).toLocaleString()} pessoas</strong>
-        </div>
-      </div>
+      <CurtidasPost curtidasImg={props.tudo.imgCurtida} curtidasQuan={curtidas} curtidasName={props.tudo.nomeCurtida}/>
     </div>
   )
 }

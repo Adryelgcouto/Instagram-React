@@ -1,7 +1,6 @@
 
 
 export default function Acoes(props) {
-
   return (
     <div class="acoes">
       <div>
